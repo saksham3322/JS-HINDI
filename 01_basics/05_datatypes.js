@@ -36,9 +36,7 @@ const myFunction = function() {
     console.log("Hello Guys");
 }
 
-console.log(heroes[0]);
-console.log(heroes[1]);
-console.log(heroes[2]);
+console.log(heroes);
 
 console.log(myobj.name);
 console.log(myobj.age);
