@@ -35,7 +35,7 @@ const obj3 = {5: "e", 6: "f"}
 // const obj4 = {obj1, obj2, obj3}
 // const obj4 = Object.assign({}, obj1, obj2, obj3)
 const obj4 = {...obj1, ...obj2, ...obj3}
-console.log(obj4);
+// console.log(obj4);
 
 const users = [
     {
@@ -51,6 +51,34 @@ const users = [
         email: "u3@gmail.com"
     },
 ]
-console.log(users);
-console.log(users[1]);
-console.log(users[2].email);
+// console.log(users);
+// console.log(users[1]);
+// console.log(users[2].email);
+
+// --------Object De-structure and JSON API Intro---------
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "saksham"
+}
+
+console.log(course.courseInstructor);
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// --------JSON Format & API Intro---------
+
+// {
+//     "name": "saksham",
+//     "courseName": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
