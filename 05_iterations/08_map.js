@@ -8,4 +8,4 @@ newNum = myNum.map((num) => num * 10)
               .map((num) => num + 1)
               .filter((num) => num >= 30)
 
-console.log(newNum);
+console.log(newNum)
