@@ -118,7 +118,7 @@
         const startOver = document.querySelector('#newGame');
 
         let prevGuess = [];
-        let numGuess = 1;
+        let numGuess = 0;
         let playGame = true;
 
         submit.addEventListener('click', function (e) {
@@ -130,8 +130,10 @@
         function validateGuess(guess) {
             if(isNaN(guess)) {
                 alert("Please enter a valid number.");
+                userInput.value = '';
             } else if(guess < 1 || guess > 100) {
                 alert("Please enter a number between 1 and 100");
+                userInput.value = '';
             } else {
                 prevGuess.push(guess);
                 if(numGuess === 10) {
